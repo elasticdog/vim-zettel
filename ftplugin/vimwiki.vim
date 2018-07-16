@@ -56,7 +56,7 @@ endfunction
 
 
 " make fulltext search in all VimWiki files using FZF
-command! -bang -nargs=* ZettelSearch call fzf#vim#ag(<q-args>, 
+command! -bang -nargs=* ZettelSearch call fzf#vim#rg(<q-args>, 
       \'--skip-vcs-ignores', {
       \'down': '~40%',
       \'sink':function('<sid>wiki_search'),
